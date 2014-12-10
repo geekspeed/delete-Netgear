@@ -1,0 +1,65 @@
+<div class="container">
+    <h2>Youtube Feed</h2>
+    <div class="row clearfix">
+
+        <div class="col-md-6 youtube-block" ng-repeat="media in product.medium">
+            <div class="thumbnail">
+                <div class="video-container">
+                    <iframe width="100%" height="250px" ng-src="{{getIframeSrc(media)}}" frameborder="0 " allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="container">
+    <h2>Instagram Feed</h2>
+
+        <div class="col-md-12">
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    <h3>#{{example1.hash}}</h3>
+                </div>
+                
+                <div class="panel-body">
+                        <div class="col-md-4 instagram-item" ng-repeat="item in example1.items">
+                            <a ng-href="{{item.link}}">
+                                <img width="300" height="280" ng-src="{{ item.images.low_resolution.url }}" src="" alt="">
+                            </a>
+                        </div>
+                    <div ng-show="example1.error" class="alert alert-danger">
+                        <strong>Warning!</strong>
+                        <br/>{{example1.error}}.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+<div class="container">
+    <h2>Wikipedia Feed</h2>
+    <div class="row clearfix">
+
+        <div class="col-md-6 youtube-block" ng-repeat="media in product.medium">
+            <div class="thumbnail">
+                <div class="video-container">
+                    <iframe width="100%" height="250px" ng-src="{{getIframeSrc(media)}}" frameborder="0 " allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
